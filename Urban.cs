@@ -48,11 +48,6 @@ public class Root
 }
 public class CPHInline
 {
-    public static bool HasBadWords(string inputWords, string BadWordsPattern)
-    {
-        Regex wordFilter = new Regex(BadWordsPattern.ToUpper());
-        return wordFilter.IsMatch(inputWords);
-    }
     public bool Execute()
     {
         string BadWordsPattern = "";
