@@ -1,3 +1,4 @@
+Originally modified from https://extensions.streamer.bot/t/urban-dictionary/123
 # Urban dictionary lookup
 When imported into streamerbot as code, it will look up a random definition from Urban's API unless given a `rawInputUrlEncoded` argument, at which point it will try to find a definition for that.
 
