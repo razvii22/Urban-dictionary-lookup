@@ -147,9 +147,13 @@ public class CPHInline
         {
             message = $"{CleanWord} : {CleanDefinition} ({wordLink})";
         }
-        CPH.LogInfo($"{message}");
-        CPH.SetArgument("Dmessage", message);
-        CPH.SetArgument("HadBadWord", replacement);
+        CPH.SetArgument("definition", def);
+        CPH.SetArgument("word", newword);
+        CPH.SetArgument("link", wordLink);
+        CPH.SetArgument("cleanDefinition",CleanDefinition);
+        CPH.SetArgument("cleanWord", CleanWord);
+        CPH.SetArgument("responseMessage", message);
+        CPH.SetArgument("hadBadWord", replacement);
         return true;
     }
 }
